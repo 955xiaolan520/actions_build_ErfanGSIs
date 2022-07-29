@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://sysupwrdl.vivo.com.cn/upgrade/official/officialFiles/PD2141_A_1.16.4-update-full_1640072693.zip
-  ROM_NAME: OriginOS
+  ROM_URL: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%947Pro/V2.47/NX709J-update.zip
+  ROM_NAME: nubia
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
 
@@ -61,7 +61,7 @@ jobs:
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
               curl -sL https://git.io/file-transfer | sh
-              ./transfer gof /final/GSI.zip
+              ./transfer gof ./final/GSI.zip
 
          
             
