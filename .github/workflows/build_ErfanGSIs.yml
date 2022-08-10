@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://romdownload.nubia.com/%E7%BA%A2%E9%AD%947Pro/V2.47/NX709J-update.zip
+  ROM_URL: http://romdownload.nubia.com/Z30Pro/B13/NX667J-update.zip
   ROM_NAME: nubia
   BUILD_TYPE: ab
   TZ: Asia/Shanghai
