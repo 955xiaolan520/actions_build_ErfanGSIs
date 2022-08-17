@@ -21,7 +21,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -57,11 +57,12 @@ jobs:
               mkdir final
               zip -r final/GSI.zip ./*
        
-       - name: Upload GSI to Release‌‌
+       - name: Upload GSI to WeTransfer
          run: |
-              cd $GITHUB_WORKSPACE/Release‌‌/output
-              curl -sL https://git.io/file-Release‌‌ | sh
-              ./Release‌‌... /final/GSI.zip
+              cd $GITHUB_WORKSPACE/ErfanGSIs/output
+              curl -sL https://git.io/file-transfer | sh
+              ./transfer gof /final/GSI.zip
+
 
          
             
